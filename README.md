@@ -1,4 +1,19 @@
-# Alexa Skill starter project using AWS Lambda and Typescript
+# About this fork
+This is a fork of https://github.com/Xzya/alexa-typescript-skill-template.git that runs with ASK V2 CLI. 
+
+---    
+
+From here down you see the readme from source repo, with a few tweaks for CLI v2. 
+The updates are in red. 
+
+---     
+
+<br/> 
+<br/>
+<br/>
+
+
+## Alexa Skill starter project using AWS Lambda and Typescript
 
 This is a simple starter project for Alexa skills using Typescript.
 
@@ -118,7 +133,7 @@ Forwarding HTTP traffic from [https://YOUR_URL]
 Press g to start a GUI session and ctrl-c to quit.
 ```
 
-2. Once you see the URL, copy it and go to your Skill console.
+2. Once you see the URL, copy it and go to your Skill console. 
 
 3. Open the `Endpoint` menu and select `HTTPS`
 
