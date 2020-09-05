@@ -2,7 +2,9 @@
 This is a fork of https://github.com/Xzya/alexa-typescript-skill-template updated for ASK CLI V2.
 
 -----
+
 From here down, you see the README from forked repo with minor instruction updates for CLI v2. 
+
 -----
 
 ## Alexa Skill starter project using AWS Lambda and Typescript
