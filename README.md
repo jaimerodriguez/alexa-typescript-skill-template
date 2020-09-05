@@ -1,16 +1,13 @@
-# About this fork
-This is a fork of https://github.com/Xzya/alexa-typescript-skill-template.git that runs with ASK V2 CLI. 
+# About this repo 
+This is a fork of https://github.com/Xzya/alexa-typescript-skill-template updated for ASK CLI V2.
 
----    
+-----
 
-From here down you see the readme from source repo, with a few tweaks for CLI v2. 
-The updates are in red. 
+From here down, you see the README from forked repo with minor updates for CLI v2. 
+The updates are in <font color='#ff9900'> orange </font>.    
 
----     
+-----
 
-<br/> 
-<br/>
-<br/>
 
 
 ## Alexa Skill starter project using AWS Lambda and Typescript
@@ -86,14 +83,18 @@ Contains an `http` server using `express`, which you can use with `ngrok` or `se
 	npm update -g ask-cli
 	```
 
-2. **Clone** the repository and navigate into the skill's root directory.
+2. **Clone** the repository. <font color='#ff9900'>v2 command below</font> 
 
 	```bash
-	ask new --url https://github.com/Xzya/alexa-typescript-skill-template.git --skill-name hello-world
-	cd hello-world
+	ask new -template-url https://github.com/jaimerodriguez/alexa-typescript-skill-template
 	```
 
-3. Install npm dependencies
+3. <font color='#ff9900'>Navigate into the skill's root directory</font>
+	```bash
+	cd <directoryname>
+	```
+
+4. Install npm dependencies
 
 	```bash
 	npm install
@@ -109,9 +110,15 @@ Contains an `http` server using `express`, which you can use with `ngrok` or `se
 
 **ASK CLI** will create the skill and the Lambda function for you. The Lambda function will be created in `us-east-1 (Northern Virginia)` by default.
 
-1. Navigate to the project's root directory. you should see a file named 'skill.json' there.
+1. Navigate to the project's root directory. you should see a file named <font color='#ff9900'>'ask-resources.json'</font> there.
 
-2. Deploy the skill and the Lambda function in one step by running the following command:
+2. <font color='#ff9900'>Compile your typescript files </font>
+
+	```bash
+	npm run-script build 
+	```
+
+3. Deploy the skill and the Lambda function in one step by running the following command:
 
 ```bash
 $ ask deploy
@@ -133,7 +140,7 @@ Forwarding HTTP traffic from [https://YOUR_URL]
 Press g to start a GUI session and ctrl-c to quit.
 ```
 
-2. Once you see the URL, copy it and go to your Skill console. 
+2. Once you see the URL, copy it and go to your Skill console.
 
 3. Open the `Endpoint` menu and select `HTTPS`
 
