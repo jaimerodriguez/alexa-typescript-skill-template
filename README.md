@@ -2,13 +2,8 @@
 This is a fork of https://github.com/Xzya/alexa-typescript-skill-template updated for ASK CLI V2.
 
 -----
-
-From here down, you see the README from forked repo with minor updates for CLI v2. 
-The updates are in <font color='#ff9900'> orange </font>.    
-
+From here down, you see the README from forked repo with minor instruction updates for CLI v2. 
 -----
-
-
 
 ## Alexa Skill starter project using AWS Lambda and Typescript
 
@@ -83,13 +78,13 @@ Contains an `http` server using `express`, which you can use with `ngrok` or `se
 	npm update -g ask-cli
 	```
 
-2. **Clone** the repository. <font color='#ff9900'>v2 command below</font> 
+2. **Clone** the repository. 
 
 	```bash
 	ask new -template-url https://github.com/jaimerodriguez/alexa-typescript-skill-template
 	```
 
-3. <font color='#ff9900'>Navigate into the skill's root directory</font>
+3. Navigate into the skill's root directory
 	```bash
 	cd <directoryname>
 	```
@@ -110,9 +105,9 @@ Contains an `http` server using `express`, which you can use with `ngrok` or `se
 
 **ASK CLI** will create the skill and the Lambda function for you. The Lambda function will be created in `us-east-1 (Northern Virginia)` by default.
 
-1. Navigate to the project's root directory. you should see a file named <font color='#ff9900'>'ask-resources.json'</font> there.
+1. Navigate to the project's root directory. you should see a file named 'ask-resources.json' there.
 
-2. <font color='#ff9900'>Compile your typescript files </font>
+2. Compile your typescript files
 
 	```bash
 	npm run-script build 
