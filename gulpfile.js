@@ -11,5 +11,8 @@ gulp.task("copyFiles", gulp_base.copyFiles);
 
 gulp.task("models", gulp_base.models);
 
-gulp.task("default", gulp.series("clean", gulp.parallel(["tsc", "copyFiles"])));
+gulp.task("installModules", gulp_base.installModules); 
+
+
+gulp.task("default", gulp.series("clean", gulp.parallel(["tsc",  "installModules"])));
 gulp.task("release", gulp.series("default"));

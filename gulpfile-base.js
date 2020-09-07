@@ -2,7 +2,10 @@
 
 const gulp = require("gulp");
 const path = require("path");
+const install = require("gulp-install"); 
+
 const child_process = require("child_process");
+
 
 const OUT_DIR = "dist";
 const IN_DIR = "lambda";
@@ -24,7 +27,6 @@ module.exports = {
    */
   clean: () => {
     const del = require("del");
-
     return del(["dist"]);
   },
 
@@ -36,6 +38,12 @@ module.exports = {
     return gulp.src(IN_DIR + "/**/*.json").pipe(gulp.dest(OUT_DIR));
   },
 
+  installModules: () => { 
+    return gulp.src (IN_DIR + "/custom/package.json").pipe(gulp.dest(OUT_DIR+"/custom")).
+            pipe(install({ 
+              npm: '--production'
+            })); 
+  }, 
   /**
    * Updates the invocation name of the models for the current environment.
    *
